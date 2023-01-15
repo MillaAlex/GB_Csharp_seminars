@@ -7,12 +7,19 @@ Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 int startnumber = 1;
 
-while (startnumber <= number)
+if (number < startnumber)
 {
-    if (startnumber % 2 == 0)
+    Console.Write("Допустимы числа от одного");
+}
+else
+{
+    while (startnumber <= number)
     {
-        Console.Write(startnumber + ", ");
-    }
+        if (startnumber % 2 == 0)
+        {
+            Console.Write(startnumber + ", ");
+        }
     startnumber++;
+    }
 }
 Console.Write("\b\b   ");
