@@ -22,4 +22,4 @@ else
     startnumber++;
     }
 }
-Console.Write("\b\b   ");
+Console.Write("\b\b \n");
