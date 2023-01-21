@@ -33,22 +33,18 @@
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number < 10)
-// т.к. в условии не сказано, что делать с отрицательными и с однозначным числом 
-{
-    Console.WriteLine("Недопустимое число");
-}
-else if (number > 99 & number <= 999)
+if (number < 10) Console.WriteLine("Недопустимое число");
+else if (number > 99 && number <= 999)
 {
     int thirdnumber = number % 10;
     Console.WriteLine("Третья цифра числа " + number + " -> " + thirdnumber);
 }
-else if (number > 9 & number <= 99)
-{
-    Console.WriteLine(number + " - > третьей цифры нет");
-}
+else if (number > 9 && number <= 99) Console.WriteLine(number + " - > третьей цифры нет");
 else if (number > 999)
 {
-    string bignumber = Convert.ToString(number);
-    Console.WriteLine("Третья цифра числа " + number + " -> " + bignumber[2]);
+    while (number > 999) number /= 10;
+    {
+        int getthirdnumber = number % 10;
+        Console.WriteLine("Третья цифра числа" + " -> " + getthirdnumber);
+    }
 }
