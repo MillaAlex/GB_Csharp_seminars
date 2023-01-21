@@ -7,16 +7,6 @@
 Console.Write("Введите цифру, обозначающую день недели: ");
 int weekday = Convert.ToInt32(Console.ReadLine());
 
-if (weekday == 6 || weekday == 7)
-{
-    Console.WriteLine(weekday + " ->  да");
-}
-if (weekday >= 1 && weekday <= 5)
-{
-    Console.WriteLine(weekday + " -> нет");
-}
-else
-    if (weekday < 1 || weekday > 7)
-    {
-        Console.Write("Недопустимое число");
-    }
+if (weekday == 6 || weekday == 7) Console.WriteLine(weekday + " ->  да");
+if (weekday >= 1 && weekday <= 5) Console.WriteLine(weekday + " -> нет");
+else if (weekday < 1 || weekday > 7) Console.Write("Недопустимое число");
