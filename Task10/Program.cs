@@ -16,7 +16,4 @@ if (number1.Length == 3)
     int secondnumber = temp % 10;
     Console.WriteLine("Вторая цифра числа " + number + " -> " + secondnumber);
 }
-else
-{
-    Console.WriteLine("Недопустимое число");
-}
+else Console.WriteLine("Недопустимое число");
