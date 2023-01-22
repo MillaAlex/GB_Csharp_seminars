@@ -42,9 +42,12 @@ else if (number > 99 && number <= 999)
 else if (number > 9 && number <= 99) Console.WriteLine(number + " - > третьей цифры нет");
 else if (number > 999)
 {
-    while (number > 999) number /= 10;
+    Console.Write($"Третья цифра числа {number} -> ");
     {
-        int getthirdnumber = number % 10;
-        Console.WriteLine("Третья цифра числа" + " -> " + getthirdnumber);
+        while (number > 999) number /= 10;
+        {
+            int getthirdnumber = number % 10;
+            Console.WriteLine(getthirdnumber);
+        }
     }
 }
