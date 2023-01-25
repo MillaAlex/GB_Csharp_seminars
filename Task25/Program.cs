@@ -8,17 +8,14 @@ int numA = int.Parse(Console.ReadLine());
 Console.Write("Введите число В: ");
 int numB = int.Parse(Console.ReadLine());
 
-int PowOfNumber(int number)
+int PowOfNumber()
 {
-    int result = numA;
+    int result = 1;
     for (int i = 0; i < numB; i++)
     {
         result *= numA;
     }
     return result;
-    Console.Write(result);
 }
-// Console.Write(result);
-// Console.Write($"Число {numA} в степени {numB} -> {(PowOfNumber(number))}");
-// Console.Write(PowOfNumber(number));
+Console.Write($"Число {numA} в степени {numB} -> {(PowOfNumber())}");
 
