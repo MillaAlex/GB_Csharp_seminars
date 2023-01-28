@@ -3,7 +3,7 @@
 [345, 897, 568, 234] -> 2
 */
 
-int[] array = new int[25];
+int[] array = new int[10];
 FillArray(array);
 PrintArray(array);
 
@@ -33,7 +33,7 @@ for (int i = 0; i < array.Length; i++)
 Console.Write(counter);
 
 
-// int QtyOfEven(int[] numbers)
+// int QtyOfEven(int[] array)
 // {
 //     int counter = 0;
 //     for (int i = 0; i < array.Length; i++)
@@ -42,4 +42,4 @@ Console.Write(counter);
 //     }
 //     return counter;
 // }
-// QtyOfEven(numbers);
+// QtyOfEven(array);
