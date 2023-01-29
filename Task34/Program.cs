@@ -25,21 +25,21 @@ void PrintArray(int[] array)
 }
 Console.Write("] -> ");
 
-int counter = 0;
-for (int i = 0; i < array.Length; i++)
-{   
-    if (array[i] % 2 == 0) counter += 1;
+int QtyOfEven()
+{
+    int counter = 0;
+    for (int i = 0; i < array.Length; i++)
+    {   
+        if (array[i] % 2 == 0) counter += 1;
+    }
+    return counter;
 }
-Console.Write(counter);
+Console.Write($"{QtyOfEven()}");
 
 
-// int QtyOfEven(int[] array)
-// {
-//     int counter = 0;
-//     for (int i = 0; i < array.Length; i++)
-//     {   
-//         if (array[i] % 2 == 0) counter += 1;
-//     }
-//     return counter;
+// int counter = 0;
+// for (int i = 0; i < array.Length; i++)
+// {   
+//     if (array[i] % 2 == 0) counter += 1;
 // }
-// QtyOfEven(array);
+// Console.Write(counter);
