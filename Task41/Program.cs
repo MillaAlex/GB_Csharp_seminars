@@ -2,7 +2,7 @@
 // 0, 7, 8, -2, -2 -> 2
 // 1, -7, 567, 89, 223-> 3
 
-int[] array = new int[3];
+int[] array = new int[5];
 FillArray(array);
 PrintArray(array);
 
@@ -16,8 +16,9 @@ void FillArray(int[] array)
 }
 void PrintArray(int[] array)
 {
-    for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]} ");
+    for (int i = 0; i < array.Length; i++) Console.Write($"{array[i]}, ");
 }
+Console.Write("\b\b");
 
 int count = 0;
 for (int i = 0; i < array.Length; i++)
