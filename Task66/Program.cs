@@ -8,15 +8,14 @@ int M = Convert.ToInt32(Console.ReadLine());
 Console.Write("Задайте значение N: ");
 int N = Convert.ToInt32(Console.ReadLine());
 
-//int count = 0;
 int sum = 0;
 
-Console.Write($"M = {M}; N = {N} -> {SumNumbers(M, N, sum)}");
+Console.Write($"M = {M}; N = {N} -> {SumOfNumbers(M, N, sum)}");
 
-int SumNumbers(int M, int N, int sum)
+int SumOfNumbers(int M, int N, int sum)
 {
     if (M == N) return sum + N;
     sum += M;
     M++;
-    return (SumNumbers(M, N, sum));
+    return (SumOfNumbers(M, N, sum));
 }
