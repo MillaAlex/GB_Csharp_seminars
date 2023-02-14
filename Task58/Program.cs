@@ -50,7 +50,7 @@ void MultiplyArrays(int[,] arr1, int[,] arr2)
             }
             Console.WriteLine();
         }
-        
+
     }
 }
 MultiplyArrays(arr1, arr2);
